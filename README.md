@@ -1,6 +1,7 @@
 # 🎯 Salesforce Marketing Cloud MCP Integration
 
-[![Host on Vinkius Cloud](https://img.shields.io/badge/Deploy%20on-Vinkius%20Cloud-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-marketing-cloud)
+[![Host on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/salesforce-marketing-cloud)
+[![Docker Pulls](https://img.shields.io/docker/pulls/vinkius/salesforce-marketing-mcp?style=for-the-badge&logo=docker&color=2496ed)](https://hub.docker.com/r/vinkius/salesforce-marketing-mcp)
 
 A cutting-edge Model Context Protocol server that translates LLM intent into Salesforce Marketing Cloud (SFMC) orchestration. Let your autonomous agents segment audiences, manage subscribers, and trigger Journey Builder workflows entirely through natural language.
 
@@ -24,7 +25,7 @@ This server equips your AI with powerful marketing primitives:
 
 ## 🌐 Deploy to Vinkius Edge
 
-Get your Marketing Cloud MCP running globally in under a minute. We utilize Vinkius Cloud for its unparalleled edge performance and security.
+Get your Marketing Cloud MCP running globally in under a minute. We utilize Vinkius Edge for its unparalleled edge performance and security.
 
 Execute the following command in your terminal:
 ```bash

@@ -1,5 +1,5 @@
 {
-  "name": "@mcp-originals/salesforce-marketing-mcp",
+  "name": "@mcp-listing/salesforce-marketing-mcp",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/server.js",
@@ -19,5 +19,21 @@
     "tsx": "^4.22.4",
     "typescript": "^5.7.2"
   },
-  "description": "salesforce-marketing-mcp MCP Server"
+  "description": "Salesforce Marketing Cloud integration for the Model Context Protocol (MCP). Autonomous AI access to campaigns, subscribers, and journeys.",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "salesforce",
+    "salesforce-marketing-cloud",
+    "crm",
+    "marketing-automation",
+    "ai-agents",
+    "vinkius"
+  ],
+  "homepage": "https://vinkius.com/mcp/salesforce-marketing-cloud",
+  "author": "Vinkius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinkius-labs/salesforce-marketing-mcp.git"
+  }
 }
