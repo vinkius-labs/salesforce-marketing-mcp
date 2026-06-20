@@ -1,0 +1,229 @@
+{
+  "capabilities": {
+    "tools": {
+      "sf_add_campaign_member": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:0d979b4c5f4d80afce7a5c7df4bcb198761ec34967834b3218ce2e71c6647d1e",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Creates a CampaignMember junction record linking a Lead or Contact to a Campaign. Provide campaignId and either contactId OR leadId (not both). Status defaults to \"Sent\" but can be set to \"Responded\", \"Registered\", etc. based on your campaign member statuses. Returns the created membership record.\n\nAdd a lead or contact to a Salesforce marketing campaign for attribution tracking and engagement measurement.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Creates a CampaignMember junction record linking a Lead or Contact to a Campaign. Provide campaignId and either contactId OR leadId (not both). Status defaults to \"Sent\" but can be set to \"Responded\", \"Registered\", etc. based on your campaign member statuses. Returns the created membership record.\n\nAdd a lead or contact to a Salesforce marketing campaign for attribution tracking and engagement measurement.. Requires: campaignId",
+          "inputSchemaDigest": "sha256:3d11cc1c9c222639b73937d6147d4adaa5ca320adf9a2d94393bb89318ce56c7",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_campaign_members": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:8d9a59def6b87be0c2df2f3d1fc62414fa4e7e2bfe28ed7fe840d208ffb268bc",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Retrieves CampaignMember junction records for a campaign. Returns member name, type (Lead or Contact), status (Sent/Responded/etc.), and response date. Use to see who is in a campaign, track engagement, or analyze campaign reach. Essential for campaign ROI and attribution analysis.\n\nGet all leads and contacts enrolled in a specific Salesforce campaign with their membership status and response dates.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Retrieves CampaignMember junction records for a campaign. Returns member name, type (Lead or Contact), status (Sent/Responded/etc.), and response date. Use to see who is in a campaign, track engagement, or analyze campaign reach. Essential for campaign ROI and attribution analysis.\n\nGet all leads and contacts enrolled in a specific Salesforce campaign with their membership status and response dates.. Requires: campaignId",
+          "inputSchemaDigest": "sha256:a8924eae0a66c01622de86ae5efe13db9f8fb886a3e41973d08f19ea102a1088",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_campaign_performance": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:9859fab9857408afe1d52067e51cec987560bdd6f1c46759619617c1340c5d37",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Runs aggregate SOQL on Campaign records grouped by Type. Returns the number of campaigns, total leads generated, total conversions, total budgeted cost, and actual cost per campaign type. Provides an instant ROI overview across all marketing channels. Use for marketing dashboard, channel-level performance comparison, or budget allocation analysis.\n\nGet aggregate marketing campaign performance — campaign counts, total leads, conversions, and costs grouped by campaign type.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Runs aggregate SOQL on Campaign records grouped by Type. Returns the number of campaigns, total leads generated, total conversions, total budgeted cost, and actual cost per campaign type. Provides an instant ROI overview across all marketing channels. Use for marketing dashboard, channel-level performance comparison, or budget allocation analysis.\n\nGet aggregate marketing campaign performance — campaign counts, total leads, conversions, and costs grouped by campaign type.",
+          "inputSchemaDigest": "sha256:ff7f9701c139118f18ec0bf38f0804c0db15365bb597f49b14ccb922f6c86adc",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_campaigns_by_status": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:1d71f75589d66f16e42058181626b2010b19e39d4d03796266a756e036121945",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Filters Campaign records by Status. Returns campaigns with lead/contact counts, budget, and conversion data. Use for questions like \"which campaigns are currently running?\" or \"show completed campaigns with their results.\"\n\nGet Salesforce campaigns filtered by status — Planned, In Progress, Completed, or Aborted — with full metrics.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Filters Campaign records by Status. Returns campaigns with lead/contact counts, budget, and conversion data. Use for questions like \"which campaigns are currently running?\" or \"show completed campaigns with their results.\"\n\nGet Salesforce campaigns filtered by status — Planned, In Progress, Completed, or Aborted — with full metrics.. Requires: status",
+          "inputSchemaDigest": "sha256:0f768bbb39737b05bd6c6826489aac1bc97269d74ffa24dc180abaddceb8633e",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_create_campaign": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:a6c62020c31b71387133f623107df3c16aecfcbeb4bb1cf499c4060f8ccaaac6",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Creates a Campaign sObject. Name is required. Type: Email, Conference, Webinar, Trade Show, Public Relations, Advertisement, Banner Ads, Telemarketing. Status defaults to \"Planned\". Dates use YYYY-MM-DD. budgetedCost is the planned spend. Returns the created campaign with its Salesforce ID.\n\nCreate a new marketing campaign in Salesforce with name, type, status, dates, description, and budget.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Creates a Campaign sObject. Name is required. Type: Email, Conference, Webinar, Trade Show, Public Relations, Advertisement, Banner Ads, Telemarketing. Status defaults to \"Planned\". Dates use YYYY-MM-DD. budgetedCost is the planned spend. Returns the created campaign with its Salesforce ID.\n\nCreate a new marketing campaign in Salesforce with name, type, status, dates, description, and budget.. Requires: name",
+          "inputSchemaDigest": "sha256:625fdce474ae53d530a33e740c5c140470bb0a58c71c1436c8887ec98a5f8e27",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      },
+      "sf_search_campaigns": {
+        "behavior": {
+          "affordanceTopology": [],
+          "cognitiveGuardrails": {
+            "agentLimitMax": null,
+            "egressMaxBytes": null
+          },
+          "destructiveActions": [],
+          "egressSchemaDigest": null,
+          "middlewareChain": [],
+          "readOnlyActions": [
+            "default"
+          ],
+          "systemRulesFingerprint": "none"
+        },
+        "entitlements": {
+          "codeEvaluation": false,
+          "crypto": false,
+          "filesystem": false,
+          "network": false,
+          "subprocess": false
+        },
+        "integrityDigest": "sha256:671d29ac9b2ff7a4aad38a77f90d5eb705845f87655944ccd662acce888b97d6",
+        "surface": {
+          "actions": [
+            "default"
+          ],
+          "description": "[INSTRUCTIONS] Queries the Campaign sObject. Returns campaign name, status (Planned/In Progress/Completed/Aborted), type (Email/Conference/Webinar/Advertisement), start/end dates, number of leads generated, contacts converted, budgeted cost, and actual cost. Use when the user asks about marketing initiatives, campaign performance, or budget spend.\n\nSearch Salesforce marketing campaigns by name to find initiatives with status, type, budget, and lead/contact conversion metrics.. Select operation via the `action` parameter. Actions: default\n\nWorkflow:\n- 'default': [INSTRUCTIONS] Queries the Campaign sObject. Returns campaign name, status (Planned/In Progress/Completed/Aborted), type (Email/Conference/Webinar/Advertisement), start/end dates, number of leads generated, contacts converted, budgeted cost, and actual cost. Use when the user asks about marketing initiatives, campaign performance, or budget spend.\n\nSearch Salesforce marketing campaigns by name to find initiatives with status, type, budget, and lead/contact conversion metrics.. Requires: query",
+          "inputSchemaDigest": "sha256:2dc1946cf408573a85051d031aa4c664bbedaf916f0f25adade220069fe93e67",
+          "tags": []
+        },
+        "tokenEconomics": {
+          "inflationRisk": "low",
+          "schemaFieldCount": 0,
+          "unboundedCollection": false
+        }
+      }
+    }
+  },
+  "generatedAt": "2026-06-20T06:35:25.086Z",
+  "integrityDigest": "sha256:2661da2c2d6c0c612fca9045c28ad49d1edf23a9b5757c10514e26acc672ad19",
+  "lockfileVersion": 1,
+  "mcpfusionVersion": "4.3.0",
+  "serverName": "mcpfusion-server"
+}
